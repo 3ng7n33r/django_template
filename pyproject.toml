@@ -1,0 +1,16 @@
+[tool.black]
+target-version = ["py38"]
+include = '\.pyi?$'
+force-exclude = '''
+(
+    /(
+        \.git
+        | \.github
+        | \.vscode
+        | \.pytest_cache
+        | env
+        | migrations
+    )/
+    | __init__.py
+)
+'''

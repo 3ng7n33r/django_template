@@ -1,0 +1,24 @@
+[flake8]
+exclude =
+    .git,
+    .github,
+    .vscode,
+    .gitignore,
+    __pycache__,
+    .env,
+    */migrations/,
+    __init__.py,
+    env/
+
+# Rules can be looked up here: https://www.flake8rules.com/
+ignore =
+    E203,  # Whitespace before ':' - Autoformatter requirement: https://bit.ly/3ERu3C2
+    E302,  # Two blank lines are expected between functions and classes.
+    E402,  # All module level imports should be at the top of the file. This means that there should be no statements in between module level imports.
+    E501,  # Line too long
+    W292,  # No newline at end of file
+    W503,  # Line break occurred before a binary operator
+
+select = C,E,F,W,B,B950
+
+max-line-length = 88
